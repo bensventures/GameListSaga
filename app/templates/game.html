@@ -1,0 +1,11 @@
+<article>
+	<header class="game-hero">
+		<img src="http://i2.midasplayer.com/images/games/<%= game.short %>/tournamentPage/<%= game.short %>_764x260.jpg" alt="<%= game.name %>" />
+		<h1 class="game-title"><%= game.name %></h1>
+	</header>
+	<section class="game-actions">
+		<a href="http://www.king.com<%= game.url %>" class="btn action-play icon ion-game-controller-b">Play</a>
+		<a href="#" class="btn action-delete icon ion-ios7-close<% if ( preview ) { %> softhide<% } %>">Delete</a>
+	</section>
+</article>
+<a href="#<% if ( preview ) { %>add<% } %>" class="action-close btn icon ion-ios7-close-empty"></a>

@@ -1,0 +1,5 @@
+@mixin grid-clear($n) {
+	& :nth-child(#{$n}n+1) {
+		clear: both;
+	}
+}

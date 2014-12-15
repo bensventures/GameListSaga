@@ -1,0 +1,17 @@
+.search-view {
+	bottom: -100%;
+	height: 85%;
+
+	.container {
+		height: 100%;
+	}
+
+	.search-form {
+		padding: 2em 2em 0 2em;
+	}
+
+	.list-group {
+		height: 85%;
+		overflow-y: auto;
+	}
+}

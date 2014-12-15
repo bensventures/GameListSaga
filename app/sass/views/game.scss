@@ -1,0 +1,50 @@
+
+.game-view {
+
+	bottom: -100%;
+	height: 85%;
+
+	.container {
+		height: 100%;
+		max-width: 764px;
+	}
+
+	.game-hero {
+		text-align: center;
+	}
+
+	.game-title {
+		text-align: center;
+		background: lighten( $jumbotron-background, 10% );
+		color: $jumbotron-color;
+		margin-top: 0;
+		padding: 1em;
+	}
+}
+
+	.game-actions {
+		text-align:center;
+
+		.btn {
+			line-height: 2em;
+			background: $action-color;
+			color: $action-opposite-color;
+			font-size: 2em;
+			border-radius: .1em;
+			text-transform: lowercase;
+
+			&:before {
+				margin-right: .5em;
+			}
+		}
+
+		.action-delete {
+			border: 1px solid $action-color;
+			background: $action-opposite-color;
+			color: $action-color;
+
+			&:before {
+				color: lighten( $delete-color, 20% );
+			}
+		}
+	}

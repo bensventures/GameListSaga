@@ -1,0 +1,153 @@
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+	height: 100%;
+}
+
+body {
+	padding-top: 50px;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+
+a, button {
+	outline : 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.navbar-brand {
+	text-align: center;
+	display: block;
+	float: none;
+}
+
+.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.softhide {
+	display: none;
+}
+
+.grid-group {
+
+	.list-group-item {
+		border: 0;
+		text-align: center;
+		padding: 1em;
+
+		.thumb {
+			display: block;
+			margin: 0 auto .5em auto;
+			border-radius: 50%;
+		}
+	}
+}
+
+@media (max-width: $screen-sm-min) {
+	.grid-group {
+		@include grid-clear( 3 );
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	.grid-group {
+		@include grid-clear( 4 );
+	}
+}
+
+.list-group {
+	.thumb {
+		margin-right: 1em;
+	}
+
+	.actions {
+		float:right;
+		padding-top: .8em;
+	}
+}
+
+// For action buttons that are hidden by default and activated through user interaction
+.actions-edit {
+	display: none;
+}
+
+.editable .actions-edit {
+	display: block;
+}
+
+.action-add {
+	&.added {
+
+		background: $action-disabled-color;
+
+		span {
+			display: none;
+		}
+
+		&:before {
+			@extend .ion-checkmark:before;
+		}
+	}
+}
+
+.btn {
+
+	background: $action-color;
+	color: $action-opposite-color;
+	border-radius: 0;
+
+	&:hover, &:active {
+		box-shadow: none;
+	}
+}
+
+.btn-danger {
+	background: 0;
+	border: 0;
+	font-size: 1.6em;
+	color: $delete-color;
+	padding: 0;
+
+	&:hover, &:active, &:focus {
+		background: none;
+		color: darken( $delete-color, 20% );
+	}
+}
+
+.floating-view {
+	position: fixed;
+	left: 0;
+	right: 0;
+
+	.container {
+		background: $background-view;
+		margin: 0 auto;
+		position: relative;
+	}
+}
+
+	.action-close {
+		position: absolute;
+		top: -1.5em;
+		right: 0;
+		font-size: 2em;
+		color: #fff;
+		background: $action-color;
+		padding: 0 .5em;
+	}

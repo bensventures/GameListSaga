@@ -1,0 +1,16 @@
+{
+  "name": "GameListSaga",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-watch": "0.4.3",
+    "grunt-sass": "0.6.1",
+    "karma": "~0.12.24",
+    "karma-jasmine": "~0.1.5",
+    "requirejs": "~2.1.15",
+    "karma-requirejs": "~0.2.2",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-chrome-launcher": "~0.1.5",
+    "grunt-contrib-requirejs": "~0.4.4"
+  }
+}

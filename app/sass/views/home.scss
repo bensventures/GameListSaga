@@ -1,0 +1,64 @@
+
+.home-view {
+
+	.list-group {
+		margin-bottom: 0;
+		padding-top: 1em;
+	}
+
+	.actions-edit {
+		position: absolute;
+		top: 1em;
+		left: 1.5em;
+	}
+
+	.jumbotron {
+		text-align: center;
+		margin-bottom: 0;
+		color: $jumbotron-color;
+		padding: 1em 0 0 0;
+		background: $jumbotron-background;
+	}
+
+	h1 {
+		margin-top: 0;
+	}
+
+	.counter-module .counter {
+		border-color: $jumbotron-color;
+	}
+
+	.action-add, .action-search {
+		font-size: 1.5em;
+		color: $action-opposite-color;
+		line-height: 1.8em;
+		padding: 0;
+	}
+
+	.action-add {
+		float: left;
+	}
+
+	.action-search {
+		float: right;
+		background: none;
+	}
+
+	.action-edit {
+		font-size: .8em;
+		background: $action-opposite-color;
+		color: $action-color;
+		float: right;
+		outline: none;
+	}
+
+	&.editable .action-edit {
+
+		background: $action-color;
+		color: $action-opposite-color;
+
+		&:before {
+			@extend .ion-checkmark:before;
+		}
+	}
+}

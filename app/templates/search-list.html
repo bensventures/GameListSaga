@@ -1,0 +1,10 @@
+<% _.each( results, function( game ) { %>
+<li class="list-group-item">
+	<img class="thumb" data-src="http://i1.midasplayer.com/images/games/<%= game.short %>/<%= game.short %>_60x60.gif" alt="<%= game.name %>" />
+	<%= game.name %>
+	<div class="actions">
+		<a href="#preview/<%= game.short %>" class="action-preview btn icon ion-eye"></a>
+		<button class="action-add btn <% if( myGames.get( game.short ) ) { %>added<% } %>" data-game-id="<%= game.short %>"><span>Add</span></button>
+	</div>
+</li>
+<% } ); %>

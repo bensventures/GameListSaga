@@ -1,0 +1,27 @@
+{
+  "name": "GameListSaga",
+  "version": "0.1.0",
+  "description": "A game list",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.0.2",
+    "requirejs": "~2.1.15",
+    "jquery": "~1.11.1",
+    "backbone": "~1.1.2",
+    "requirejs-text": "~2.0.12",
+    "velocity": "~1.1.0",
+    "jquery-unveil": "~1.3.0",
+    "almond": "~0.3.0"
+  }
+}
